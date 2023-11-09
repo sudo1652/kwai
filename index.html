@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KWAIHS</title>
     <link rel="stylesheet" href="./css/one.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+
 <body>
     <section>
         <div id="video-background">
-            <video playsinline autoplay muted loop>
-                <source src="./video/video2.mp4" type="video/mp4">
-            </video>
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                src="https://www.youtube.com/embed/FNSRLCyA3so?autoplay=1&mute=1&loop=1&playlist=FNSRLCyA3so&controls=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
-        <div id="section1">
-            <h1 style="font-size: 60px;">광운인공지능고등학교</h1>
+        <div id="section1" class="demo">
             <div>
-                국내 최초의 인공지능 전문 고등학교. 
+                <h1 style="font-size: 80px;">Hi, KWAI!</h1>
+                <div style="font-size: 30px;">
+                    인공지능, 광운을 만나다.
+                </div>
+                <br>
+                <!-- 동영상 플레이어 버튼 -->
+                <button id="myBtn">
+                    <i class="material-icons" style="color: white; font-size:  80px;">play_circle</i>
+                </button>
+            </div>
+            <!-- 모달 -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" style="color: white;">
+                        &times;
+                    </span>
+                    <iframe width="700" height="500"
+                        src="https://www.youtube.com/embed/FNSRLCyA3so?si=js6mL1CyjZqLeyuXcontrols=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <a href="#section2">
+                <span>
+
+                </span>
+            </a>
+            <script src="./js/style.js"></script>
+    </section>
+    </div>
+    <section id="section2">
+        <div id="myDiv2">
+            <div class="font1">
+                광운인공지능고등학교는 국내 최초의 <br>인공지능 전문 특성화 고등학교입니다.
             </div>
         </div>
-    </section>
-    <section id="section2">
-        
+        <div>
+
+        </div>
     </section>
 </body>
+
 </html>
