@@ -1,5 +1,5 @@
 #video-background {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -24,7 +24,7 @@
 
 #section1 {
     position: center;
-    height: 100vh;
+    height: 87vh;
     background-color: #1f1717a2;
     display: flex;
     flex-direction: column;
@@ -44,6 +44,17 @@
     justify-content: center;
     text-align: left;
     padding: 50px;
+}
+
+#section3 {
+    position: center;
+    height: 100vh;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 50px;
+    color: white;
 }
 
 h1 {
@@ -86,9 +97,9 @@ button {
 }
 
 .font1 {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
 }
 
 #section1 a {
