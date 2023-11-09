@@ -1,21 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Plus+Jakarta+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Plus+Jakarta+Sans:wght@500&display=swap');
 
-html, body {
+#myDiv1 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+
+#myDiv2 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+}
+
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
-  
-  #your-section-id {
-    height: 100%;
-  }
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 35px;
+}
 
-  .rounded-box {
+#your-section-id {
+    height: 100%;
+}
+
+.rounded-box {
     border-radius: 10px;
     overflow: hidden;
-  }
-  
-   
+}
+
+
 /* #section1 {
     margin: auto;
     background-color: #435585;
@@ -26,29 +39,16 @@ html, body {
 .header1 {
     display: flex;
     text-align: center;
-}
-
-.iframe1 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -100;
-    background-size: cover;
-    
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  
-  #video-background {
+}
+
+/* #video-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -58,14 +58,9 @@ body {
     height: 100%;
     z-index: -100;
     overflow: hidden;
-  }
-  
-  #video-background iframe {
-    width: 100%;
-    height: 100%;
-  }
-  
-  #overlay-text {
+  } */
+
+#overlay-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -73,9 +68,8 @@ body {
     color: #fff;
     font-size: 24px;
     text-align: center;
-  }
+}
 
 #div1 {
     text-align: center;
 }
-  
