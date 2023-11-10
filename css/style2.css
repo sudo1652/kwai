@@ -91,6 +91,14 @@ h1 {
     max-width: 1200px;
 }
 
+.close {
+    position: absolute;
+    top: 0;
+    left: 15%; /* 왼쪽 패딩을 20px로 설정 */
+    padding: 10px;
+    cursor: pointer;
+}
+
 button {
     cursor: pointer;
     border: none;
@@ -102,7 +110,15 @@ button {
 }
 
 .font2 {
-    margin: 9%;
+    margin-top: 10%;
+    margin-left: 9%;
+    /* 기타 스타일 */
+}
+
+.fontcolor1 {
+    background-image: linear-gradient(to right, #3E8CCF, #cb64ba);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #section1 a {
