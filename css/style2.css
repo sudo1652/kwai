@@ -37,7 +37,7 @@
 
 #section2 {
     position: center;
-    height: 100vh;
+    height: 87vh;
     background-color: white;
     /* display: flex; */
     align-items: center;
@@ -55,6 +55,61 @@
     text-align: left;
     padding: 50px;
     color: white;
+}
+
+#section4 {
+  position: center;
+  height: 87vh;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+  color: white;
+}
+
+#section5 {
+  position: center;
+  height: 87vh;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+  color: white;
+}
+
+#section6 {
+  position: center;
+  height: 87vh;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+  color: white;
+}
+
+#section7 {
+  position: center;
+  height: 87vh;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+  color: white;
+}
+
+#section8 {
+  position: center;
+  height: 100vh;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+  color: white;
 }
 
 h1 {
@@ -75,8 +130,8 @@ h1 {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: #000000;
+    background-color: #00000066;
 }
 
 /* 모달 콘텐츠의 스타일 */
@@ -115,10 +170,46 @@ button {
     /* 기타 스타일 */
 }
 
+.font3 {
+  margin-top: 10%;
+  margin-right: 15%;
+  margin-left: 5%;
+}
+
+.font4 {
+  margin-top: 10%;
+  margin-right: 7%;
+  margin-left: 5%;
+}
+
 .fontcolor1 {
     background-image: linear-gradient(to right, #3E8CCF, #cb64ba);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.fontcolor2 {
+    background-image: linear-gradient(to right, #EBA858, #7183BD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fontcolor3 {
+  background-image: linear-gradient(to right, #65B890, #4190CF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fontcolor4 {
+  background-image: linear-gradient(to right, #DE6181, #E89945);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fontcolor5 {
+  background-image: linear-gradient(to right, #4AA4BE, #689E4F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #section1 a {
