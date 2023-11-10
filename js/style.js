@@ -1,11 +1,3 @@
-// var vid = document.getElementById("myVideo");
-
-// vid.onplaying = function() {
-//     setTimeout(function(){
-//         vid.pause();
-//     }, 15000); // 5000 milliseconds = 5 seconds
-// };
-
 // 모달과 버튼, 닫기 요소를 가져옵니다
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
