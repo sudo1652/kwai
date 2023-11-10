@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Plus+Jakarta+Sans:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;800&display=swap');
+
 #myDiv1 {
-    font-family: 'Nanum Gothic', sans-serif;
     font-weight: 700;
 }
 
 #myDiv2 {
-    font-family: 'Nanum Gothic', sans-serif;
     font-weight: 800;
 }
 
@@ -15,7 +15,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 35px;
 }
 
@@ -72,4 +72,70 @@ body {
 
 #div1 {
     text-align: center;
+}
+
+.slide_item {
+    float: left;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    overflow: hidden;
+    width: 400px;
+}
+
+.slide_box {
+    width: 1600px;
+    transition: 0.5s;
+}
+
+.slide_item {
+    float: left;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    width: 95vw;
+    height: 73vh;
+    flex-shrink: 0;
+    border-radius: 5vh;
+    background: #272727;
+}
+
+.box2 img {
+    width: 50vh;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+    border-radius: 25px;
+}
+
+.img1 {
+    margin-left: auto;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+
+a {
+    text-decoration: none;
+    color: #4A90EF;
+}
+
+a:hover {
+    text-decoration: underline;
 }
