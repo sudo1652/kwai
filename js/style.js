@@ -1,28 +1,27 @@
-import { useState } from 'react';
+// 모달과 버튼, 닫기 요소를 가져옵니다
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
 
-export default function Modal() {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const openModal = () => {
-        setIsOpen(true);
-    }
-
-    const closeModal = () => {
-        setIsOpen(false);
-    }
-
-    return (
-        <div>
-            <button id="myBtn" onClick={openModal}>Open Modal</button>
-
-            {isOpen && (
-                <div id="myModal" className="modal">
-                    <div className="modal-content">
-                        <span className="close" onClick={closeModal}>×</span>
-                        <p>Some text in the Modal..</p>
-                    </div>
-                </div>
-            )}
-        </div>
-    );
+// 버튼을 클릭하면 모달을 엽니다
+btn.onclick = function() {
+    modal.style.display = "block";
 }
+
+// 닫기 요소를 클릭하면 모달을 닫습니다
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// 사용자가 모달 외부를 클릭하면 모달을 닫습니다
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+$('#section1 span').click(function() {
+    $('html, body').animate({
+        scrollTop: $('#section2').offset().top
+    }, 1000);
+});
