@@ -1,0 +1,35 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.5); /* 반투명 배경 */
+    backdrop-filter: blur(10px); /* 블러 효과 */
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar {
+    position: relative;
+    z-index: 100;
+    /* 기타 스타일 */
+    background-color: #333; /* 네비게이션 바의 배경색을 설정합니다. */
+        color: #000000; /* 네비게이션 바의 글꼴 색상을 설정합니다. */
+        position: fixed; /* 네비게이션 바를 화면 상단에 고정합니다. */
+        width: 100%; /* 네비게이션 바의 너비를 100%로 설정합니다. */
+}
+
+#navbar a {
+    color: #fff; /* 네비게이션 바의 링크 색상을 설정합니다. */
+    padding: 15px; /* 네비게이션 바의 링크 패딩을 설정합니다. */
+    text-decoration: none; /* 네비게이션 바의 링크에 밑줄을 제거합니다. */
+}
