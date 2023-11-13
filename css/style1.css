@@ -155,7 +155,7 @@ video {
     height: 73%;
     flex-shrink: 0;
     border-radius: 3vw;
-    background-image: url('../네트워크통신과-new.jpg');
+    background-image: url('네트워크통신과-new.jpg');
     background-size: cover;
     background-position: center;
 }
