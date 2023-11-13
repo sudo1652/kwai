@@ -22,7 +22,7 @@
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
-  background: url('../원본_비디오.mp4') no-repeat;
+  background: url('../video.mp4') no-repeat;
   background-size: cover;
   overflow: hidden; /* 비디오가 요소의 상자를 벗어나면 잘라냅니다. */
 }
@@ -366,6 +366,7 @@ button {
     transition: opacity 1s ease-in-out; /* 애니메이션 효과 추가 */
     opacity: 0;
 }
+
 
 .control {
     position: absolute;
