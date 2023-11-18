@@ -14,7 +14,7 @@
     }
 }
 
-.myDiv1 {
+#myDiv1 {
     font-weight: 700;
     font-size: calc(20px + 1vw);
 }
