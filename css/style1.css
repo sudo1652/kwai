@@ -92,9 +92,9 @@ body {
     align-items: center;
 }
 
-.container img {
+/* .container img {
     width: 50vw;
-}
+} */
 
 .header1 {
     display: flex;
@@ -228,4 +228,9 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    border-radius: 1vw;
 }
