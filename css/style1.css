@@ -19,9 +19,14 @@
     font-size: calc(20px + 1vw);
 }
 
+#myDiv1-1 {
+    font-weight: 700;
+    font-size: calc(15px + 1vw);
+}
+
 #myDiv2 {
     font-weight: 800;
-    font-size: calc(28px + 1vw);
+    /* font-size: calc(20px + 1vw); */
 }
 
 #info {
@@ -30,7 +35,7 @@
 }
 
 html {
-    background-color: black;
+    overflow-x: hidden;
 }
 
 html,
@@ -86,19 +91,11 @@ body {
 }
 
 .container {
+    margin: 2%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-/* .container img {
-    width: 50vw;
-} */
-
-.header1 {
-    display: flex;
-    margin-right: 10%;
 }
 
 /* video {
@@ -231,6 +228,7 @@ a:hover {
 }
 
 img {
+    vertical-align: bottom;
     width: 100%;
     border-radius: 1vw;
 }

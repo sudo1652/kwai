@@ -1,14 +1,14 @@
 /* 창의 너비가 600px 이하일 때 모달 컨텐츠의 최대 너비를 800px로 변경 */
 @media screen and (max-width: 600px) {
   .modal-content {
-      max-width: 80px;
+    max-width: 80px;
   }
 }
 
 /* 창의 너비가 400px 이하일 때 모달 컨텐츠의 최대 너비를 600px로 변경 */
 @media screen and (max-width: 400px) {
   .modal-content {
-      max-width: 60px;
+    max-width: 60px;
   }
 }
 
@@ -24,8 +24,10 @@
   transform: translateX(-50%) translateY(-50%);
   background: url('../video.mp4') no-repeat;
   background-size: cover;
-  overflow: hidden; /* 비디오가 요소의 상자를 벗어나면 잘라냅니다. */
+  overflow: hidden;
+  /* 비디오가 요소의 상자를 벗어나면 잘라냅니다. */
 }
+
 #video-background video {
   position: absolute;
   top: 50%;
@@ -38,51 +40,52 @@
   object-fit: cover;
 }
 
-#video1, #video2, #video3, #video4, #video5, #video6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#video1,
+#video2,
+#video3,
+#video4,
+#video5,
+#video6 {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   border-radius: 1vw;
   width: 80%;
-  margin: auto;
-  margin-bottom: 5%;
+  min-width: 300px;
 }
 
 #section0 {
-  position: center;
-  /* display: flex; */
-  height: 100%;
-  /* background-color: white; */
+  position: relative;
+  background-color: #AFD3E2;
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding: 50px;
   color: white;
 }
 
 #section1 {
-    position: center;
-    height: 87vh;
-    background-color: #1f1717a2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 50px;
-    color: white;
+  position: center;
+  height: 87vh;
+  background-color: #1f1717a2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  color: white;
 }
 
-#section2, #section4, #section5, #section6 {
+#section2 {
   position: center;
-  background-color: white;
+  background-color: #F3F8FF;
   align-items: center;
   justify-content: center;
   text-align: left;
   padding: 50px;
 }
 
-#section3, #section7 {
+#section3 {
   position: center;
   background-color: black;
   align-items: center;
@@ -93,80 +96,145 @@
   z-index: -100;
 }
 
-/* #section7 {
+#section4 {
+  overflow: hidden; /* 섹션4의 내용이 넘치면 숨김 */
   position: center;
-  height: 78vw;
-  background-color: #000000;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+}
+
+#section5 {
+  position: center;
+  background-color: #F5F7F8;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+}
+
+#section6 {
+  position: center;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+}
+
+#section7 {
+  position: center;
+  background-color: #EEF5FF;
   align-items: center;
   justify-content: center;
   text-align: left;
   padding: 50px;
   color: white;
-} */
+  background-image: url('../video5.png');;
+  background-size: cover;
+  background-position: center;
+}
+
+#section7-1 {
+  position: center;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+}
 
 #section8 {
   position: center;
-  height: 100vh;
-  background-color: #a5a5a5;
+  /* background-color: #a5a5a5; */
+  background-color: #FAEED1;
   align-items: center;
   justify-content: center;
   text-align: left;
   padding: 50px;
-  color: white;
 }
 
 h1 {
-    background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Nanum Gothic';
+  background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Nanum Gothic';
+  font-size: 80px;
 }
 
 /* 모달의 기본 스타일 */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 5;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: #000000;
-    background-color: #00000066;
+  display: none;
+  position: fixed;
+  z-index: 5;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: #00000066;
 }
 
 /* 모달 콘텐츠의 스타일 */
 .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
-    padding: 0;
-    width: 90vw;
-    max-width: 1200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  padding: 0;
+  width: 90vw;
+  max-width: 1200px;
 }
 
 .close {
-    position: absolute;
-    top: 0;
-    left: 15%; /* 왼쪽 패딩을 20px로 설정 */
-    padding: 10px;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 15%;
+  /* 왼쪽 패딩을 20px로 설정 */
+  padding: 10px;
+  cursor: pointer;
 }
 
 button {
-    cursor: pointer;
-    border: none;
-    background: none;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
 
 .font1 {
-    margin-bottom: 3%;
-    margin-top: 1%;
-    word-break: keep-all;
+  margin-bottom: 3%;
+  margin-top: 1%;
+  word-break: keep-all;
+}
+
+.font1-1 {
+  margin-top: 7%;
+  margin-bottom: 1%;
+  font-size: calc(10px + 1vw);
+  /* color: #3559E0; */
+  color: #0093fd;
+}
+
+.font1-2 {
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
+.font1-4 {
+  margin-top: 3%;
+  margin-bottom: 1%;
+  font-size: calc(10px + 1vw);
+  color: #0094fe;
+}
+
+.font1-3 {
+  margin-top: 3%;
+  margin-bottom: 1%;
+  font-size: calc(8px + 1vw);
 }
 
 .font2 {
@@ -217,20 +285,13 @@ button {
 }
 
 .font4-1 {
-  position: absolute;
-  bottom: 30%;
-  margin-left: 5%;
-  margin-right: 3%;
   text-align: left;
   word-break: keep-all;
 }
 
 .font5 {
   align-items: flex-end;
-  /* margin-top: 5%; */
-  margin-left: 5%;
-  margin-right: 3%;
-  margin-bottom: 10%;
+  margin-top: 10%;
   text-align: left;
   word-break: keep-all;
 }
@@ -238,22 +299,67 @@ button {
 .font6 {
   align-items: flex-end;
   margin-top: 15%;
-  margin-left: 2%;
+  margin-left: 3%;
   margin-bottom: 15%;
   text-align: left;
   word-break: keep-all;
 }
 
+.font7 {
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  /* margin-bottom: 15%; */
+  text-align: center;
+  word-break: keep-all;
+  font-size: calc(18px + 1vw);
+}
+
+.font7-1 {
+  margin: 10%;
+  margin-top: 5%;
+  align-items: center;
+  text-align: center;
+  word-break: keep-all;
+  font-size: calc(18px + 1vw);
+}
+
+.font7-2 {
+  margin: 10%;
+  margin-top: 10%;
+  align-items: center;
+  text-align: center;
+  word-break: keep-all;
+  font-size: calc(35px + 1vw);
+}
+
+.font8 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  word-break: keep-all;
+  font-size: calc(10px + 1vw);
+}
+
+.note {
+  color: #6e6e6e;
+  font-size: calc(3px + 1vw);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  word-break: keep-all;
+}
+
 .fontcolor1 {
-    background-image: linear-gradient(to right, #3E8CCF, #cb64ba);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #3E8CCF, #cb64ba);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .fontcolor2 {
-    background-image: linear-gradient(to right, #EBA858, #7183BD);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #EBA858, #7183BD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .fontcolor3 {
@@ -281,100 +387,108 @@ button {
 }
 
 #section1 a {
-    padding-top: 70px;
-  }
-  #section1 a span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: sdb05 1.5s infinite;
-    animation: sdb05 1.5s infinite;
-    box-sizing: border-box;
+  padding-top: 70px;
+}
+
+#section1 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
   }
 
-  @-webkit-keyframes sdb05 {
-    0% {
-      -webkit-transform: rotate(-45deg) translate(0, 0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-      opacity: 0;
-    }
-  }
-  @keyframes sdb05 {
-    0% {
-      transform: rotate(-45deg) translate(0, 0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(-45deg) translate(-20px, 20px);
-      opacity: 0;
-    }
+  50% {
+    opacity: 1;
   }
 
-  .demo a {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    z-index: 2;
-    display: inline-block;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    color: #fff;
-    font : normal 400 20px/1 'Nanum Gothic', sans-serif;
-    letter-spacing: .1em;
-    text-decoration: none;
-    transition: opacity .3s;
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
   }
-  .demo a:hover {
-    opacity: .5;
+}
+
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
   }
 
-  .banner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 'Nanum Gothic', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.demo a:hover {
+  opacity: .5;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    transition: opacity 1s ease-in-out; /* 애니메이션 효과 추가 */
-    opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: opacity 1s ease-in-out;
+  /* 애니메이션 효과 추가 */
+  opacity: 0;
 }
 
 
 .control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 2em;
-    color: rgb(159, 98, 98);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: rgb(159, 98, 98);
 }
 
 #prev {
-    left: 10px;
+  left: 10px;
 }
 
 #next {
-    right: 10px;
+  right: 10px;
 }
