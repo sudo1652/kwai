@@ -60,9 +60,13 @@ var observer = new IntersectionObserver(function (entries) {
     });
 }, { threshold: [0.5] });
 
-videos.forEach(function (video) {
-    observer.observe(video);
-});
+document.addEventListener("DOMContentLoaded", function() {
+    // 여기에 IntersectionObserver 코드를 넣습니다
+    videos.forEach(function (video) {
+        observer.observe(video);
+    });
+  });
+  
 
 window.addEventListener('scroll', function () {
     var elements;
