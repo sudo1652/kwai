@@ -170,11 +170,11 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Nanum Gothic';
-  font-size: calc(80px + 1vw)
+  font-size: calc(60px + 1vw)
 }
 
 h6 {
-  font-size: calc(30px + 1vw);
+  font-size: calc(15px + 1vw);
 }
 
 /* 모달의 기본 스타일 */
