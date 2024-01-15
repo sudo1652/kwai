@@ -377,7 +377,7 @@ button {
   color: #6e6e6e;
   font-size: calc(3px + 1vw);
   margin-left: 10%;
-  /* margin-right: 10%; */
+  margin-right: 10%;
   margin-top: 2%;
   word-break: keep-all;
 }
