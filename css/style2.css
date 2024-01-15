@@ -126,16 +126,26 @@
 
 #section7 {
   position: center;
-  background-color: #EEF5FF;
   align-items: center;
   justify-content: center;
   text-align: left;
   padding: 50px;
   color: white;
-  background-image: url('../video5.png');;
+  background-image: url('../video5.png');
   background-size: cover;
   background-position: center;
 }
+
+/* @keyframes zoomin {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.2); }
+}
+
+#section7.zoomin > div:first-child {
+  animation-name: zoomin;
+  animation-duration: 3s;
+  animation-direction: alternate;
+} */
 
 #section7-1 {
   position: center;
@@ -161,6 +171,10 @@ h1 {
   -webkit-text-fill-color: transparent;
   font-family: 'Nanum Gothic';
   font-size: 80px;
+}
+
+h6 {
+  font-size: 30px;
 }
 
 /* 모달의 기본 스타일 */
@@ -209,6 +223,12 @@ button {
   margin-bottom: 3%;
   margin-top: 1%;
   word-break: keep-all;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.font1.show {
+  opacity: 1;
 }
 
 .font1-1 {
@@ -308,11 +328,16 @@ button {
 .font7 {
   justify-content: center;
   align-items: center;
-  margin: 10%;
-  /* margin-bottom: 15%; */
+  margin-top: 10%;
+  margin-bottom: 10%;
   text-align: center;
   word-break: keep-all;
-  font-size: calc(18px + 1vw);
+  font-size: calc(18px + 1vw); 
+  opacity: 0;
+  transition: opacity 2s;
+}  
+.font7.show {
+  opacity: 1;
 }
 
 .font7-1 {

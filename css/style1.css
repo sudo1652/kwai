@@ -91,7 +91,7 @@ body {
 }
 
 .container {
-    margin: 2%;
+    margin: 3%;
     display: flex;
     flex-direction: row;
     justify-content: center;
