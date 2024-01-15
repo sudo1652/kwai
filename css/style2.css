@@ -76,6 +76,12 @@
   color: white;
 }
 
+@media screen and (max-width: 600px) {
+  #section1 {
+    height: 87wh; /* 원하는 높이로 조정하세요 */
+  }
+}
+
 #section2 {
   position: center;
   background-color: #F3F8FF;
