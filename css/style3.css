@@ -6,6 +6,15 @@
     font-size: calc(10px + 1vw);
 }
 
+@media screen and (max-width: 600px) {
+    #fontsize2 {
+        font-size: calc(13px + 1vw);
+    }
+    #fontsize3 {
+        font-size: calc(8px + 1vw);
+    }
+} 
+
 /* #info {
     font-size: calc(10px + 1vw);
 } */
