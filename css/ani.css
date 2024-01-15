@@ -20,7 +20,7 @@
 
 .boxani1 {
     opacity: 0;
-    transform: translateX(-20vh);
+    transform: translateX(-10vh);
     transition: opacity 2s, transform 2s;
 }
 .boxani1.show {
@@ -30,7 +30,7 @@
 
 .boxani2 {
     opacity: 0;
-    transform: translateX(20vh);
+    transform: translateX(10vh);
     transition: opacity 2s, transform 2s, visibility 2s;
 }
 .boxani2.show {
@@ -38,7 +38,12 @@
     transform: translateX(0);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
+    .boxani1, .boxani1.show, .boxani2, .boxani2.show {
+        opacity: 0;
+        transform: none;
+    }
+
     .boxani3 {
         opacity: 0;
         transition: opacity 2s;

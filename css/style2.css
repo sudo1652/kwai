@@ -333,7 +333,7 @@ button {
   margin-bottom: 10%;
   text-align: center;
   word-break: keep-all;
-  font-size: calc(18px + 1vw); 
+  font-size: calc(15px + 1vw); 
   opacity: 0;
   transition: opacity 2s;
 }  
@@ -356,7 +356,7 @@ button {
   align-items: center;
   text-align: center;
   word-break: keep-all;
-  font-size: calc(35px + 1vw);
+  font-size: calc(25px + 1vw);
 }
 
 .font8 {
