@@ -31,8 +31,8 @@
 @media screen and (max-width: 768px) {
   #video-background {
     /* 모바일 환경에서는 비디오가 사이드바까지 확장되도록 설정 */
-    min-width: 130%;
-    min-height: 130%;
+    min-width: 125%;
+    min-height: 125%;
     overflow: hidden;
   }
 }
