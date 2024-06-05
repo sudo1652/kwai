@@ -38,6 +38,17 @@
     transform: translateX(0);
 }
 
+.modalAni {
+    opacity: 0;
+    transform: translateX(10vh);
+    transition: opacity 2s, transform 2s, visibility 2s;
+}
+
+.modalAni.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 @media screen and (max-width: 1200px) {
     .boxani1, .boxani1.show, .boxani2, .boxani2.show {
         opacity: 0;
