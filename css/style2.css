@@ -37,7 +37,8 @@
   #video-background {
     /* 모바일 환경에서는 비디오가 사이드바까지 확장되도록 설정 */
 /*     min-width: 123%; */
-    min-height: 123%;
+/*     min-height: 123%; */
+    width: 100%;
   }
 }
 
