@@ -226,22 +226,18 @@ body {
 @media (max-width: 600px) {
     .box1, .box2, .box3, .box4, .box5 {
         width: 100%;
-        margin: 0;
+        /* margin: 0%; */
         /* 필요한 추가 스타일을 여기에 작성하세요 */
     }
 }
 
 /* 데스크탑 화면에서 적용할 스타일 */
 @media (min-width: 601px) {
-    .box1 {
+    .box1, .box2, .box3, .box4, .box5 {
         width: 85%; /* 중앙에 위치하도록 너비를 줄입니다 */
         margin: auto;
     } 
-    .box2, .box3, .box4, .box5 {
-        width: 50%; /* 중앙에 위치하도록 너비를 줄입니다 */
-        margin: auto; /* 중앙에 위치하도록 마진을 자동으로 설정합니다 */
-        /* 필요한 추가 스타일을 여기에 작성하세요 */
-    }
+   
 }
 
 a {
