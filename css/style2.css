@@ -110,7 +110,6 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding: 50px;
   color: white;
   z-index: -100;
 }
@@ -122,7 +121,6 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding: 50px;
 }
 
 #section5 {
@@ -131,7 +129,6 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding: 50px;
 }
 
 #section6 {
@@ -140,7 +137,6 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding: 50px;
 }
 
 #section7 {
@@ -148,7 +144,6 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding: 50px;
   color: white;
   background-image: url('../video5.png');
   background-size: cover;
@@ -171,7 +166,6 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding: 50px;
 }
 
 #section8 {
@@ -181,7 +175,6 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding: 50px;
 }
 
 h1 {
@@ -189,11 +182,11 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Nanum Gothic';
-  font-size: calc(50px + 1vw)
+  font-size: calc(40px + 1vw)
 }
 
 h6 {
-  font-size: calc(13px + 1vw);
+  font-size: calc(10px + 1vw);
 }
 
 /* 모달의 기본 스타일 */
@@ -240,8 +233,8 @@ button {
 }
 
 .font1 {
-  margin-bottom: 3%;
-  margin-top: 1%;
+  /* margin-bottom: 3%;
+  margin-top: 1%; */
   word-break: keep-all;
   opacity: 0;
   transition: opacity 2s;
@@ -338,10 +331,9 @@ button {
 }
 
 .font6 {
-  align-items: flex-end;
-  margin-top: 15%;
-  margin-left: 3%;
-  margin-bottom: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: left;
   word-break: keep-all;
 }
@@ -353,7 +345,7 @@ button {
   margin-bottom: 10%;
   text-align: center;
   word-break: keep-all;
-  font-size: calc(15px + 1vw); 
+  font-size: calc(13px + 1vw); 
   opacity: 0;
   transition: opacity 2s;
 }  
@@ -390,9 +382,9 @@ button {
 .note {
   color: #6e6e6e;
   font-size: calc(3px + 1vw);
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   word-break: keep-all;
 }
 
