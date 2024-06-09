@@ -151,6 +151,12 @@
   background-position: center;
 }
 
+@media (max-width: 600px) {
+  #section7 {
+    height: 25vh;
+  }
+}
+
 #section2,
 #section4,
 #section5,
