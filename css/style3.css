@@ -118,21 +118,13 @@ div img {
     }
 }
 
-.container4 {
-    margin: 4%;
-    margin-right: 3%;
-}
-
 .container4-1 {
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 3%;
     flex-direction: column;
 }
 
 .container4-2 {
-    margin: 4%;
-    margin-right: 0%;
+    margin: 3%;
 }
 
 .containerX {
@@ -141,6 +133,16 @@ div img {
     justify-content: center;
     align-items: center;
 }
+
+.containerXI {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
 
 /* 모바일 화면에서는 .desktop 요소를 숨기고 .mobile 요소를 표시합니다 */
 @media (max-width: 600px) {
